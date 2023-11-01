@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="AppWebAspLoginUsuario.Page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="StyleSheet.css">    
+    <link href="css/teste.css" rel="stylesheet" /> 
+</head>
+<body>
+    
+   
+     <header>
+     <div class="topnav" id="myTopnav">
+         <a href="Formulario.aspx" class="active"> .NET</a>
+         <a href="Login.aspx">Login</a>
+         <a href="Register.aspx">Registro</a>
+         <a href="Dashboard.aspx">Dashboard</a>
+        <a href="Dashboard.aspx">Logout</a>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div>
+             </header>
+    <form id="form1" runat="server">
+        <div class="main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer class="footer"> </footer>
+    
+</body>
+</html>
